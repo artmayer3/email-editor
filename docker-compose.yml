@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  frontend:
+    container_name: email-editor-frontend
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 80:8080
+  
