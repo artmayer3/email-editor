@@ -10,7 +10,7 @@ function App() {
   const saveDesign = () => {
     const unlayer = emailEditorRef.current?.editor;
 
-    unlayer?.saveDesign((design: any) => {
+    unlayer?.saveDesign((design: string) => {
       saveAs(
         new Blob([JSON.stringify(design)], { type: "text/plain;charset=utf-8" }),
         "design.json"
